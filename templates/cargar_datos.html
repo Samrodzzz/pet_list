@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[url('https://png.pngtree.com/background/20220714/original/pngtree-cute-cat-footprint-pattern-background-picture-image_1605674.jpg')] bg-center bg-no-repeat bg-cover" >
+
+    <!-- Especifica la URL a la que se enviaran los datos del formulario -->
+    <section class="h-screen w-screen flex justify-center items-center">
+        
+        <form class=" flex-col flex items-center justify-center  bg-orange-200 h-[85%] w-[45%]" action="/cargar_datos" method="post">
+            <div class="my-5" >
+                <label class= "text-3xl"  for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <div class="my-5" >
+                <label class= "text-3xl"  for="tipo">Perro/Gato</label>
+                <select name="tipo" id="tipo">
+                    <option value="">Seleccione una opcion</option>
+                    <option value="Perro">Perro</option>
+                    <option value="Gato">Gato</option>
+                </select>
+            </div>
+            <div class="my-5" >
+                <label class= "text-3xl"  for="raza">Raza</label>
+                <input type="text" name="raza" id="raza" required>
+                
+            </div>
+            <div  class="my-5">
+                <label class= "text-3xl"  for="servicio">Servicio</label>
+                <input type="text" name="servicio" id="servicio" required>
+            </div>
+            <div  class="my-5">
+                <label class= "text-3xl"  for="duenho">Dueño</label>
+                <input type="text" name="duenho" id="duenho" required>
+            </div>
+            <div  class="my-5">
+                <label class= "text-3xl"  for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha" required>
+            </div>
+            <div  class="my-5">
+                <label class= "text-3xl" for="costo">Costo</label>
+                <input type="text" name="costo" id="costo" required>
+            </div  >
+            <div class="my-8 flex flex-col ">
+                <button class="text-5xl my-5 text-slate-900 hover:text-white" type="submit" >Cargar</button>
+                <button class="text-5xl my-5 text-slate-900 hover:text-white"><a href="/mostrar_datos">Mostrar Registro</a></button>
+                
+            </div>
+        </form>
+
+    </section>
+</body>
+</html>
